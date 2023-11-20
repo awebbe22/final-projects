@@ -1,0 +1,41 @@
+﻿Anna Webb
+Springboard Data Science Career Track
+
+
+Guided Capstone Project Report
+        Nestled between Glacier National Park and Flathead National Forest, Big Mountain Resort is uniquely situated to attract skiers and snowboarders of all levels. Despite 105 trails, 11 lifts, 2 T-bars, and a vertical drop of 2,353 ft, Big Mountain Resort leadership has serious decisions to make regarding their new business strategy. 
+Big Mountain Resort is looking to implement a more data-driven business strategy to select a better value for their ticket price. They need advice on what changes to make in order to either cut costs or support an even higher ticket price. To do this, they need data-backed suggestions regarding cutting operating costs, increasing ticket prices, and further capitalizing on their facilities.
+Big Mountain Resort has been reviewing potential scenarios for either cutting costs or increasing revenue (from ticket prices). Ticket price is not determined by any set of parameters; the resort is free to set whatever price it likes. However, the resort operates within a market where people pay more for certain facilities, and less for others. Being able to sense how facilities support a given ticket price is valuable business intelligence. This is where the utility of our model comes in.
+The business has shortlisted some options:
+1. Permanently closing down up to 10 of the least used runs. This doesn't impact any other resort statistics.
+2. Increase the vertical drop by adding a run to a point 150 feet lower down but requiring the installation of an additional chair lift to bring skiers back up, without additional snow making coverage
+3. Same as number 2, but adding 2 acres of snow making cover
+4. Increase the longest run by 0.2 mile to boast 3.5 miles length, requiring an additional snow making coverage of 4 acres
+        The expected number of visitors over the season is 350,000 and, on average, visitors ski for five days. Assume the provided data includes the additional lift that Big Mountain recently installed.
+
+
+Scenario 1: Close up to 10 of the least used runs. The number of runs is the only parameter varying.        
+According to our modeling, closing one run makes no difference. Closing 2 and 3 successively reduces support for ticket price and so revenue. If Big Mountain closes down 3 runs, it seems they may as well close down 4 or 5 as there's no further loss in ticket price. Increasing the closures down to 6 or more leads to a large drop.
+
+
+Scenario 2: In this scenario, Big Mountain is adding a run, increasing the vertical drop by 150 feet, and installing an additional chair lift.
+This scenario increases support for ticket price by $8.61. Over the season, this could be expected to amount to $15,065,471.
+
+
+Scenario 3: This scenario is repeating the previous one but adding 2 acres of snow making.
+This scenario increases support for ticket price by $9.90. Over the season, this could be expected to amount to $17,322,717. Such a small increase in the snow making area makes no difference!
+Scenario 4: This scenario calls for increasing the longest run by .2 miles and guaranteeing its snow coverage by adding 4 acres of snow making capability. This model resorted in no difference whatsoever. Although the longest run feature was used in the linear model, the random forest model (the one we chose because of its better performance) only has longest run way down in the feature importance list.
+
+
+Recommendations
+        The recommendation for Big Mountain Resort is to increase their price by 16.31% with options for either cutting operating costs by closing runs or increasing price by increasing vertical drop, adding acres of snow making, or increasing the longest run. 
+Here are some of the options:
+* Increasing the vertical drop by 150 ft would increase the ticket price by 10.44% from $81 to $89.46, resulting in a revenue increase of $14,811,594.
+* Adding 2 acres of snow making would increase the ticket price by 12% from $81 to $90.75, resulting in a revenue increase of $17,068,841.
+* When it comes to closing up to 10 used runs, our model predicted the following:
+   * Closing 1 run will have no impact on ticket price or revenue.
+   * Closing 2 runs reduces support for ticket price and revenue by $0.40 and $750,000 respectively.
+   * Closing down 3 runs has very minimal revenue variance from closing 4 or 5. There is a loss in ticket price and revenue by $0.67 and $1.250M respectively.
+   * Closing 10 runs reduces support for ticket price and so revenue by $1.71 and $3M respectively.
+Because we don’t know the operating cost per used run, we can’t determine how much cost saving will offset the loss in revenue after closing more than one run.
+The best scenario for Big Mountain Resort is to increase the vertical drop by 150 ft, add 1 chair lift, add 1 run and add 2 acres of snow making cover. This scenario increases the ticket price by 12% from $81 to $90.75, resulting in a bottom line increase of $15,528,841 ($1.54M after deducting operating costs).
