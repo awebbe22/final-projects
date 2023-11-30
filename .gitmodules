@@ -1,0 +1,3 @@
+[submodule "capstone-1"]
+	path = capstone-1
+	url = https://github.com/awebbe22/capstone-1.git
