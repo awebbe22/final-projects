@@ -1,3 +1,6 @@
 [submodule "capstone-1"]
 	path = capstone-1
 	url = https://github.com/awebbe22/capstone-1.git
+[submodule "capstone-2"]
+	path = capstone-2
+	url = https://github.com/awebbe22/capstone-2.git
